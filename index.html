@@ -1,67 +1,30 @@
 <!DOCTYPE html>
-<html lang="fr">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>FOF BOUTIQUE - Abidjan</title>
+<html lang="fr"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FOF BOUTIQUE GAGNOA</title>
 <style>
-*{box-sizing:border-box}
-body{margin:0;font-family:Arial;background:#f5f5f5}
-header{background:#000;color:#fff;padding:16px;text-align:center;position:sticky;top:0;z-index:20}
-header h1{margin:0;font-size:22px}header h1 span{color:#00ff88}
-header small{display:block;margin-top:4px;color:#aaa;font-size:12px}
-.bar{background:#fff;padding:10px;display:flex;gap:8px;position:sticky;top:72px;z-index:10}
-.bar input{flex:1;padding:12px;border-radius:10px;border:1px solid #ddd}
-.grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;padding:10px}
-.card{background:#fff;border-radius:16px;overflow:hidden;box-shadow:0 4px 12px rgba(0,0,0,.06);border:1px solid #eee;display:flex;flex-direction:column}
-.imgbox{width:100%;height:150px;background:linear-gradient(135deg,#f0f0f0,#ffffff);display:flex;align-items:center;justify-content:center;font-size:50px;border-bottom:1px solid #f0f0f0}
-.info{padding:10px;flex:1;display:flex;flex-direction:column}
-.size{display:inline-block;font-size:10px;background:#111;color:#00ff88;padding:3px 7px;border-radius:20px;font-weight:700;width:fit-content}
-.name{font-size:12.5px;font-weight:800;margin:6px 0 4px;min-height:34px}
-.price{color:#00a651;font-weight:900;font-size:16px;margin-top:auto}
-.btn{display:block;background:#000;color:#fff;text-align:center;padding:11px;border-radius:10px;text-decoration:none;margin-top:8px;font-weight:900;font-size:12px}
-.foot{text-align:center;padding:20px;color:#888;font-size:12px}
-.badge{font-size:10px;background:#00ff88;color:#000;padding:2px 6px;border-radius:10px;margin-left:5px;font-weight:800}
-</style>
-</head>
-<body>
-<header><h1>FOF <span>BOUTIQUE</span></h1><small>Abidjan - 37 à 45 - WhatsApp: 05 66 40 75 88</small></header>
-<div class="bar"><input id="search" placeholder="Chercher..." oninput="filter()"></div>
-<div class="grid" id="grid"></div>
-<div class="foot">FOF BOUTIQUE - Livraison CI - Paiement à la livraison</div>
-<script>
-let P=[
-{n:"New Balance 530 - Blanche / Gris",p:"15.000F",e:"👟",s:"37-45",c:"Nouveau"},
-{n:"Adidas Campus - Noir / Blanc",p:"13.000F",e:"👟",s:"37-45",c:"Best"},
-{n:"Adidas Campus - Noir / Rose",p:"13.000F",e:"👟",s:"37-45",c:"Best"},
-{n:"Adidas Campus - Marron / Blanc",p:"13.000F",e:"👟",s:"37-45",c:"Best"},
-{n:"Nike TN - Blanche",p:"15.000F",e:"🔥",s:"37-45",c:"Hot"},
-{n:"Nike TN - Noire",p:"15.000F",e:"🔥",s:"37-45",c:"Hot"},
-{n:"Jordan 4 - Blanc / Noir",p:"13.000F",e:"🏀",s:"37-45",c:""},
-{n:"Vans - Noir / Blanc",p:"13.000F",e:"🛹",s:"37-45",c:""},
-{n:"NB 9060 Triple Black - Noir / Beige",p:"15.000F",e:"👟",s:"37-45",c:"Nouveau"},
-{n:"Nike Shox TL - Triple Black Noir",p:"15.000F",e:"⚡",s:"37-45",c:""},
-{n:"Air Force 1 - Black Python Noir",p:"15.000F",e:"🐍",s:"37-45",c:"Rare"},
-{n:"Puma Suede XL - Noir",p:"15.000F",e:"🐆",s:"37-45",c:""},
-{n:"Puma Suede XL - Rouge",p:"15.000F",e:"🐆",s:"37-45",c:""},
-{n:"Puma Suede XL - Bleu",p:"15.000F",e:"🐆",s:"37-45",c:""},
-{n:"Nike Air Max - Blanc / Noir",p:"15.000F",e:"💨",s:"37-45",c:""},
-{n:"Adidas Runfalcon - Noir / Blanc",p:"12.000F",e:"🏃",s:"37-45",c:"Promo"},
-{n:"Asics Gel Kayano - Blanc / Noir",p:"15.000F",e:"👟",s:"37-45",c:""}
-];
-function render(L){
-document.getElementById('grid').innerHTML=L.map(x=>`
-<div class="card">
-<div class="imgbox">${x.e}</div>
-<div class="info">
-<div><span class="size">${x.s}</span>${x.c?`<span class="badge">${x.c}</span>`:''}</div>
-<div class="name">${x.n}</div>
-<div class="price">${x.p}</div>
-<a class="btn" href="https://wa.me/2250566407588?text=Salut%20FOF%20je%20veux%20${encodeURIComponent(x.n)}%20${x.p}" target="_blank">COMMANDER</a>
+*{margin:0;padding:0;box-sizing:border-box}body{font-family:Arial,sans-serif;background:#f5f5f7}
+.header{background:#000;color:#fff;padding:16px;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:10}
+.hero{background:#000;color:#fff;text-align:center;padding:36px 14px} .hero h1{font-size:28px}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;padding:10px;max-width:1000px;margin:auto} 
+.card{background:#fff;border-radius:16px;overflow:hidden;box-shadow:0 4px 18px rgba(0,0,0,.06)}
+.imgbox{height:190px;background:#fff;display:flex;align-items:center;justify-content:center;position:relative} .imgbox img{width:100%;height:100%;object-fit:cover}
+.badge{position:absolute;top:8px;left:8px;background:#ff3b30;color:#fff;font-size:10px;padding:3px 8px;border-radius:10px;font-weight:800}
+.info{padding:10px} .sizes{font-size:11px;color:#888} .price{font-weight:800;margin:6px 0} .btn{width:100%;background:#000;color:#fff;border:0;padding:10px;border-radius:10px;font-weight:700}
+.footer{text-align:center;padding:30px;background:#000;color:#fff;margin-top:20px} .wa{position:fixed;bottom:18px;right:18px;background:#25D366;width:56px;height:56px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:28px;text-decoration:none}
+</style></head><body>
+<div class="header"><b>FOF BOUTIQUE</b><span style="background:#ff3b30;padding:4px 10px;border-radius:20px;font-size:12px">GAGNOA</span></div>
+<div class="hero"><h1>CHAUSSURES DE QUALITÉ</h1><p>📍 Gagnoa - Livraison partout CI<br>40 à 46 - Paiement à la livraison</p></div>
+<div class="grid">
+<div class="card"><div class="imgbox"><span class="badge">TOP</span><img src="nb530-white.jpg"></div><div class="info"><h3>New Balance 530 White</h3><p class="sizes">Pointures 40-46</p><div class="price">13.000F</div><button class="btn" onclick="cmd('New Balance 530 White - 13.000F')">COMMANDER</button></div></div>
+<div class="card"><div class="imgbox"><span class="badge">NEW</span><img src="aimax.jpg"></div><div class="info"><h3>Nike AirMax Aimax</h3><p class="sizes">Pointures 40-45</p><div class="price">15.000F</div><button class="btn" onclick="cmd('Nike AirMax Aimax - 15.000F')">COMMANDER</button></div></div>
+<div class="card"><div class="imgbox"><span class="badge">TN</span><img src="tn-blanche.jpg"></div><div class="info"><h3>Nike TN Blanche</h3><p class="sizes">Pointures 40-46</p><div class="price">15.000F</div><button class="btn" onclick="cmd('Nike TN Blanche - 15.000F')">COMMANDER</button></div></div>
+<div class="card"><div class="imgbox"><span class="badge">AF1</span><img src="af1-black.jpg"></div><div class="info"><h3>Air Force 1 Black</h3><p class="sizes">Pointures 40-44</p><div class="price">13.000F</div><button class="btn" onclick="cmd('Air Force 1 Black - 13.000F')">COMMANDER</button></div></div>
+<div class="card"><div class="imgbox"><span class="badge"></span><img src="nb530-2.jpg"></div><div class="info"><h3>New Balance 530</h3><p class="sizes">Pointures 40-46</p><div class="price">13.000F</div><button class="btn" onclick="cmd('New Balance 530 - 13.000F')">COMMANDER</button></div></div>
+<div class="card"><div class="imgbox"><span class="badge">ASICS</span><img src="asics.jpg"></div><div class="info"><h3>Asics Gel Kayano 14</h3><p class="sizes">Pointures 40-44</p><div class="price">13.000F</div><button class="btn" onclick="cmd('Asics Gel Kayano 14 - 13.000F')">COMMANDER</button></div></div>
+<div class="card"><div class="imgbox"><span class="badge">PROMO 12K</span><img src="ogy.jpg"></div><div class="info"><h3>OGY Sneaker Street</h3><p class="sizes">Pointures 40-44</p><div class="price">12.000F</div><button class="btn" onclick="cmd('OGY Sneaker Street - 12.000F')">COMMANDER</button></div></div>
+<div class="card"><div class="imgbox"><span class="badge">NB</span><img src="nb530-green.jpg"></div><div class="info"><h3>New Balance 530 Green</h3><p class="sizes">Pointures 40-45</p><div class="price">13.000F</div><button class="btn" onclick="cmd('New Balance 530 Green - 13.000F')">COMMANDER</button></div></div>
 </div>
-</div>`).join('');}
-function filter(){let q=document.getElementById('search').value.toLowerCase();render(P.filter(p=>p.n.toLowerCase().includes(q)));}
-render(P);
-</script>
-</body>
-</html>
+<div class="footer"><p><b>FOF BOUTIQUE - GAGNOA</b></p><p>WhatsApp: 05 66 40 75 88</p></div>
+<a class="wa" href="https://wa.me/2250566407588">💬</a>
+<script>function cmd(m){let t=encodeURIComponent("Salut FOF! Je veux: "+m+" - Gagnoa");window.open("https://wa.me/2250566407588?text="+t,"_blank");}</script>
+</body></html>
