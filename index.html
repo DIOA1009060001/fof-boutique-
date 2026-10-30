@@ -8,67 +8,59 @@
 *{box-sizing:border-box}
 body{margin:0;font-family:Arial;background:#f5f5f5}
 header{background:#000;color:#fff;padding:16px;text-align:center;position:sticky;top:0;z-index:20}
-header h1{margin:0;font-size:22px}
-header h1 span{color:#00ff88}
+header h1{margin:0;font-size:22px}header h1 span{color:#00ff88}
 header small{display:block;margin-top:4px;color:#aaa;font-size:12px}
 .bar{background:#fff;padding:10px;display:flex;gap:8px;position:sticky;top:72px;z-index:10}
 .bar input{flex:1;padding:12px;border-radius:10px;border:1px solid #ddd}
 .grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;padding:10px}
-.card{background:#fff;border-radius:16px;overflow:hidden;box-shadow:0 4px 12px rgba(0,0,0,.06)}
-.card img{width:100%;height:165px;object-fit:cover;background:#fff}
-.info{padding:10px}
-.size{display:inline-block;font-size:10px;background:#111;color:#00ff88;padding:3px 7px;border-radius:20px;font-weight:700}
-.name{font-size:12.5px;font-weight:800;margin:6px 0 4px;height:34px;overflow:hidden}
-.price{color:#00a651;font-weight:900;font-size:16px}
+.card{background:#fff;border-radius:16px;overflow:hidden;box-shadow:0 4px 12px rgba(0,0,0,.06);border:1px solid #eee;display:flex;flex-direction:column}
+.imgbox{width:100%;height:150px;background:linear-gradient(135deg,#f0f0f0,#ffffff);display:flex;align-items:center;justify-content:center;font-size:50px;border-bottom:1px solid #f0f0f0}
+.info{padding:10px;flex:1;display:flex;flex-direction:column}
+.size{display:inline-block;font-size:10px;background:#111;color:#00ff88;padding:3px 7px;border-radius:20px;font-weight:700;width:fit-content}
+.name{font-size:12.5px;font-weight:800;margin:6px 0 4px;min-height:34px}
+.price{color:#00a651;font-weight:900;font-size:16px;margin-top:auto}
 .btn{display:block;background:#000;color:#fff;text-align:center;padding:11px;border-radius:10px;text-decoration:none;margin-top:8px;font-weight:900;font-size:12px}
 .foot{text-align:center;padding:20px;color:#888;font-size:12px}
+.badge{font-size:10px;background:#00ff88;color:#000;padding:2px 6px;border-radius:10px;margin-left:5px;font-weight:800}
 </style>
 </head>
 <body>
-<header>
-<h1>FOF <span>BOUTIQUE</span></h1>
-<small>Abidjan - 37 à 45 - WhatsApp: 05 66 40 75 88</small>
-</header>
+<header><h1>FOF <span>BOUTIQUE</span></h1><small>Abidjan - 37 à 45 - WhatsApp: 05 66 40 75 88</small></header>
 <div class="bar"><input id="search" placeholder="Chercher..." oninput="filter()"></div>
 <div class="grid" id="grid"></div>
 <div class="foot">FOF BOUTIQUE - Livraison CI - Paiement à la livraison</div>
 <script>
 let P=[
-{n:"New Balance 530 - Blanche / Gris",p:"15.000F",s:"37-45"},
-{n:"Adidas Campus - Noir / Blanc",p:"13.000F",s:"37-45"},
-{n:"Adidas Campus - Noir / Rose",p:"13.000F",s:"37-45"},
-{n:"Adidas Campus - Marron / Blanc",p:"13.000F",s:"37-45"},
-{n:"Nike TN - Blanche",p:"15.000F",s:"37-45"},
-{n:"Nike TN - Noire",p:"15.000F",s:"37-45"},
-{n:"Jordan 4 - Blanc / Noir",p:"13.000F",s:"37-45"},
-{n:"Vans - Noir / Blanc",p:"13.000F",s:"37-45"},
-{n:"NB 9060 Triple Black - Noir / Beige",p:"15.000F",s:"37-45"},
-{n:"Nike Shox TL - Triple Black Noir",p:"15.000F",s:"37-45"},
-{n:"Air Force 1 - Black Python Noir",p:"15.000F",s:"37-45"},
-{n:"Puma Suede XL - Noir",p:"15.000F",s:"37-45"},
-{n:"Puma Suede XL - Rouge",p:"15.000F",s:"37-45"},
-{n:"Puma Suede XL - Bleu",p:"15.000F",s:"37-45"},
-{n:"Nike Air Max - Blanc / Noir",p:"15.000F",s:"37-45"},
-{n:"Adidas Runfalcon - Noir / Blanc",p:"12.000F",s:"37-45"},
-{n:"Asics Gel Kayano - Blanc / Noir",p:"15.000F",s:"37-45"}
+{n:"New Balance 530 - Blanche / Gris",p:"15.000F",e:"👟",s:"37-45",c:"Nouveau"},
+{n:"Adidas Campus - Noir / Blanc",p:"13.000F",e:"👟",s:"37-45",c:"Best"},
+{n:"Adidas Campus - Noir / Rose",p:"13.000F",e:"👟",s:"37-45",c:"Best"},
+{n:"Adidas Campus - Marron / Blanc",p:"13.000F",e:"👟",s:"37-45",c:"Best"},
+{n:"Nike TN - Blanche",p:"15.000F",e:"🔥",s:"37-45",c:"Hot"},
+{n:"Nike TN - Noire",p:"15.000F",e:"🔥",s:"37-45",c:"Hot"},
+{n:"Jordan 4 - Blanc / Noir",p:"13.000F",e:"🏀",s:"37-45",c:""},
+{n:"Vans - Noir / Blanc",p:"13.000F",e:"🛹",s:"37-45",c:""},
+{n:"NB 9060 Triple Black - Noir / Beige",p:"15.000F",e:"👟",s:"37-45",c:"Nouveau"},
+{n:"Nike Shox TL - Triple Black Noir",p:"15.000F",e:"⚡",s:"37-45",c:""},
+{n:"Air Force 1 - Black Python Noir",p:"15.000F",e:"🐍",s:"37-45",c:"Rare"},
+{n:"Puma Suede XL - Noir",p:"15.000F",e:"🐆",s:"37-45",c:""},
+{n:"Puma Suede XL - Rouge",p:"15.000F",e:"🐆",s:"37-45",c:""},
+{n:"Puma Suede XL - Bleu",p:"15.000F",e:"🐆",s:"37-45",c:""},
+{n:"Nike Air Max - Blanc / Noir",p:"15.000F",e:"💨",s:"37-45",c:""},
+{n:"Adidas Runfalcon - Noir / Blanc",p:"12.000F",e:"🏃",s:"37-45",c:"Promo"},
+{n:"Asics Gel Kayano - Blanc / Noir",p:"15.000F",e:"👟",s:"37-45",c:""}
 ];
-function getImg(n){return `https://via.placeholder.com/400x300/ffffff/000000?text=${encodeURIComponent(n)}`}
 function render(L){
 document.getElementById('grid').innerHTML=L.map(x=>`
 <div class="card">
-<img src="${getImg(x.n)}">
+<div class="imgbox">${x.e}</div>
 <div class="info">
-<span class="size">${x.s}</span>
+<div><span class="size">${x.s}</span>${x.c?`<span class="badge">${x.c}</span>`:''}</div>
 <div class="name">${x.n}</div>
 <div class="price">${x.p}</div>
-<a class="btn" href="https://wa.me/2250566407588?text=Salut%20FOF%20BOUTIQUE%20je%20veux%20${encodeURIComponent(x.n)}%20${x.p}%20Pointure%2037-45" target="_blank">COMMANDER</a>
+<a class="btn" href="https://wa.me/2250566407588?text=Salut%20FOF%20je%20veux%20${encodeURIComponent(x.n)}%20${x.p}" target="_blank">COMMANDER</a>
 </div>
-</div>`).join('');
-}
-function filter(){
-let q=document.getElementById('search').value.toLowerCase();
-render(P.filter(p=>p.n.toLowerCase().includes(q)));
-}
+</div>`).join('');}
+function filter(){let q=document.getElementById('search').value.toLowerCase();render(P.filter(p=>p.n.toLowerCase().includes(q)));}
 render(P);
 </script>
 </body>
