@@ -1,27 +1,69 @@
-<!DOCTYPE html><html lang="fr"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>FOF BOUTIQUE GAGNOA</title><style>*{margin:0;padding:0;box-sizing:border-box}body{font-family:system-ui;background:#f5f5f5}.h{background:#000;color:#fff;text-align:center;padding:14px;font-weight:900}.g{display:grid;grid-template-columns:1fr 1fr;gap:12px;padding:12px}.c{background:#fff;border-radius:16px;overflow:hidden}.c img{width:100%;height:220px;object-fit:cover;display:block}.i{padding:10px}.n{font-weight:800;font-size:13px;height:36px}.p{color:#e60023;font-weight:900;font-size:17px}.b{background:#000;color:#fff;width:100%;padding:9px;border:none;border-radius:22px;margin-top:7px;font-weight:700}.w{position:fixed;bottom:10px;left:10px;right:10px;background:#25D366;color:#fff;text-align:center;padding:14px;border-radius:30px;font-weight:900;text-decoration:none}</style></head><body><div class="h">FOF BOUTIQUE GAGNOA - 05 66 40 75 88<br><small>🚚 LIVRAISON GRATUITE 37-45</small></div><div class="g" id="grid"></div><a class="w" href="https://wa.me/2250566407588">💬 WhatsApp 05 66 40 75 88</a><br><br><br><script>
-const produits=[
-["New Balance Noir/Beige","15000F"],
-["Jordan Beige","15000F"],
-["Adidas Campus Noir/Rose","13000F"],
-["Puma Suede Noir/Rouge","15000F"],
-["Air Force Noir","12000F"],
-["Adidas Marron","13000F"],
-["Vans Old Skool","15000F"],
-["TN Blanche/Noir","15000F"],
-["Campus Noir et Rose","13000F"],
-["Nike Shox Noir","15000F"],
-["ASICS Gel","13000F"],
-["Adidas Runfalcon Marron","15000F"],
-["OGX","15000F"],
-["Puma Bleu","15000F"],
-["TN Full White","15000F"],
-["Jordan Noir","13000F"],
-["New Balance Blanc","15000F"],
-["Air Force Noir","15000F"]
-];
-fetch('https://api.github.com/repos/dioa1009060001/fof-boutique-/contents/image').then(r=>r.json()).then(files=>{
-files=files.filter(f=>!f.name.toLowerCase().includes('logo')).sort((a,b)=>a.name.localeCompare(b.name));
-let h='';for(let i=0;i<files.length&&i<produits.length;i++){h+=`<div class="c"><img src="${files[i].download_url}"><div class="i"><div class="n">${produits[i][0]}</div><div class="p">${produits[i][1]}</div><button class="b" onclick="location.href='https://wa.me/2250566407588?text=Je veux ${encodeURIComponent(produits[i][0])}'">Commander</button></div></div>`;}
-document.getElementById('grid').innerHTML=h;
-});
-</script></body></html>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>FOF BOUTIQUE GAGNOA - 12000F à 15000F</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:system-ui;background:#f2f2f2}
+.top{background:#000;color:#fff;text-align:center;padding:18px 10px;font-weight:900;position:sticky;top:0;z-index:10}
+.top small{color:#ffeb3b}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;padding:10px;padding-bottom:90px}
+.card{background:#fff;border-radius:16px;overflow:hidden;box-shadow:0 3px 10px rgba(0,0,0,.12)}
+.card img{width:100%;height:230px;object-fit:cover;display:block;background:#eee}
+.info{padding:10px}
+.name{font-weight:800;font-size:12px;min-height:32px}
+.price{color:#e60023;font-weight:900;font-size:18px;margin:4px 0}
+.btn{background:#000;color:#fff;width:100%;padding:11px;border:none;border-radius:24px;font-weight:800}
+.wa{position:fixed;bottom:12px;left:12px;right:12px;background:#25D366;color:#fff;text-align:center;padding:15px;border-radius:32px;font-weight:900;text-decoration:none;z-index:99}
+</style>
+</head>
+<body>
+<div class="top">FOF BOUTIQUE GAGNOA - 05 66 40 75 88<br><small>12000F • 13000F • 15000F | 37-46 | Livraison Gagnoa</small></div>
+
+<div class="grid">
+<div class="card"><img src="./image/1.jpeg" id="i1"><div class="info"><div class="name">Campus Noir Rose</div><div class="price">13000F</div><button class="btn" onclick="cmd(1,'Campus Noir Rose','13000F')">Commander 📸</button></div></div>
+<div class="card"><img src="./image/2.jpeg" id="i2"><div class="info"><div class="name">Campus Noir Blanc</div><div class="price">13000F</div><button class="btn" onclick="cmd(2,'Campus Noir Blanc','13000F')">Commander 📸</button></div></div>
+<div class="card"><img src="./image/3.jpeg" id="i3"><div class="info"><div class="name">TN White</div><div class="price">15000F</div><button class="btn" onclick="cmd(3,'TN White','15000F')">Commander 📸</button></div></div>
+<div class="card"><img src="./image/4.jpeg" id="i4"><div class="info"><div class="name">Air Max</div><div class="price">15000F</div><button class="btn" onclick="cmd(4,'Air Max','15000F')">Commander 📸</button></div></div>
+<div class="card"><img src="./image/5.jpeg" id="i5"><div class="info"><div class="name">Jordan 4 Blanc</div><div class="price">15000F</div><button class="btn" onclick="cmd(5,'Jordan 4 Blanc','15000F')">Commander 📸</button></div></div>
+<div class="card"><img src="./image/6.jpeg" id="i6"><div class="info"><div class="name">Vans</div><div class="price">15000F</div><button class="btn" onclick="cmd(6,'Vans','15000F')">Commander 📸</button></div></div>
+<div class="card"><img src="./image/7.jpeg" id="i7"><div class="info"><div class="name">NB Blanc Vert</div><div class="price">15000F</div><button class="btn" onclick="cmd(7,'NB Blanc Vert','15000F')">Commander 📸</button></div></div>
+<div class="card"><img src="./image/8.jpeg" id="i8"><div class="info"><div class="name">OGYI</div><div class="price">15000F</div><button class="btn" onclick="cmd(8,'OGYI','15000F')">Commander 📸</button></div></div>
+<div class="card"><img src="./image/9.jpeg" id="i9"><div class="info"><div class="name">NB Beige</div><div class="price">15000F</div><button class="btn" onclick="cmd(9,'NB Beige','15000F')">Commander 📸</button></div></div>
+<div class="card"><img src="./image/10.jpeg" id="i10"><div class="info"><div class="name">Samba Blanc Noir</div><div class="price">12000F</div><button class="btn" onclick="cmd(10,'Samba Blanc Noir','12000F')">Commander 📸</button></div></div>
+<div class="card"><img src="./image/11.jpeg" id="i11"><div class="info"><div class="name">Adidas Running Noir</div><div class="price">15000F</div><button class="btn" onclick="cmd(11,'Adidas Running Noir','15000F')">Commander 📸</button></div></div>
+<div class="card"><img src="./image/12.jpeg" id="i12"><div class="info"><div class="name">Jordan 4 Full Noir</div><div class="price">13000F</div><button class="btn" onclick="cmd(12,'Jordan 4 Full Noir','13000F')">Commander 📸</button></div></div>
+<div class="card"><img src="./image/13.jpeg" id="i13"><div class="info"><div class="name">AF1 Full Noir</div><div class="price">12000F</div><button class="btn" onclick="cmd(13,'AF1 Full Noir','12000F')">Commander 📸</button></div></div>
+<div class="card"><img src="./image/14.jpeg" id="i14"><div class="info"><div class="name">Air Force</div><div class="price">15000F</div><button class="btn" onclick="cmd(14,'Air Force','15000F')">Commander 📸</button></div></div>
+<div class="card"><img src="./image/15.jpeg" id="i15"><div class="info"><div class="name">Puma</div><div class="price">15000F</div><button class="btn" onclick="cmd(15,'Puma','15000F')">Commander 📸</button></div></div>
+<div class="card"><img src="./image/16.jpeg" id="i16"><div class="info"><div class="name">TN Blanc</div><div class="price">15000F</div><button class="btn" onclick="cmd(16,'TN Blanc','15000F')">Commander 📸</button></div></div>
+<div class="card"><img src="./image/17.jpeg" id="i17"><div class="info"><div class="name">Air Force</div><div class="price">13000F</div><button class="btn" onclick="cmd(17,'Air Force','13000F')">Commander 📸</button></div></div>
+<div class="card"><img src="./image/18.jpeg" id="i18"><div class="info"><div class="name">New Balance Noir</div><div class="price">15000F</div><button class="btn" onclick="cmd(18,'New Balance Noir','15000F')">Commander 📸</button></div></div>
+</div>
+
+<a class="wa" href="https://wa.me/2250566407588">💬 WhatsApp FOF 05 66 40 75 88</a>
+
+<script>
+async function cmd(id,nom,prix){
+  const img=document.getElementById('i'+id);
+  const texte=`👟 COMMANDE FOF BOUTIQUE GAGNOA
+Nom: ${nom}
+Prix: ${prix}
+Pointure: 37-46
+Photo jointe 👇`;
+  try{
+    const res=await fetch(img.src);
+    const blob=await res.blob();
+    const file=new File([blob], nom+'.jpg', {type: blob.type});
+    if(navigator.canShare && navigator.canShare({files:[file]})){
+      await navigator.share({files:[file], title: nom, text: texte});
+      return;
+    }
+  }catch(e){}
+  window.open('https://wa.me/2250566407588?text='+encodeURIComponent(texte+'\n'+img.src));
+}
+</script>
+</body>
+</html>
