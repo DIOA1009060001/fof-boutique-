@@ -2,37 +2,45 @@
 <html lang="fr">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>FOF BOUTIQUE GAGNOA - 37 a 45</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FOF Boutique - Gagnoa Commerce</title>
 <style>
-*{margin:0;padding:0;box-sizing:border-box}body{font-family:Arial;background:#f5f5f7}
-.header{background:#000;color:#fff;padding:14px;display:flex;justify-content:space-between;position:sticky;top:0;z-index:10}
-.hero{background:#000;color:#fff;text-align:center;padding:24px 12px;line-height:1.6}
-.hero h1{font-size:19px}
-.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;padding:10px;max-width:1100px;margin:auto}
-.card{background:#fff;border-radius:14px;overflow:hidden;box-shadow:0 2px 12px rgba(0,0,0,.08)}
-.imgbox{height:175px;position:relative;background:#fff}.imgbox img{width:100%;height:100%;object-fit:cover}
-.badge{position:absolute;top:6px;left:6px;background:#ff3b30;color:#fff;font-size:8px;padding:4px 8px;border-radius:8px;font-weight:900}
-.info{padding:9px}.info h3{font-size:11px;min-height:34px;line-height:1.2}
-.sizes{font-size:10px;font-weight:800;background:#000;color:#fff;display:inline-block;padding:3px 8px;border-radius:6px;margin:4px 0}
-.price{font-weight:900;margin:5px 0;font-size:13px}
-.btn{width:100%;background:#000;color:#fff;border:0;padding:9px;border-radius:8px;font-weight:700;font-size:10px;cursor:pointer}
-.footer{text-align:center;padding:18px;background:#000;color:#fff;margin-top:14px;line-height:1.6}
-.wa{position:fixed;bottom:16px;right:16px;background:#25D366;width:54px;height:54px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:26px;text-decoration:none;z-index:99}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:system-ui;background:#f6f6f6;color:#111}
+header{background:#0f0f0f;color:#fff;padding:20px;text-align:center;position:sticky;top:0;z-index:20}
+.banner{background:#ffe600;text-align:center;padding:12px;font-weight:800;font-size:14px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;padding:12px;max-width:1200px;margin:auto}
+@media(min-width:800px){.grid{grid-template-columns:repeat(3,1fr)}}
+.card{background:#fff;border-radius:18px;overflow:hidden;box-shadow:0 6px 18px rgba(0,0,0,.08);display:flex;flex-direction:column}
+.card img{width:100%;height:230px;object-fit:cover;background:#eee}
+.info{padding:12px 12px 0 12px}.name{font-weight:800;font-size:14px;min-height:36px}.price{color:#e11d48;font-weight:900;font-size:16px;margin-top:8px}
+.sizes{font-size:11px;color:#555;background:#f3f3f3;padding:4px 8px;border-radius:20px;display:inline-block;margin-top:4px}
+.btn{margin:12px;background:#111;color:#fff;border:none;border-radius:12px;padding:12px;font-weight:800;cursor:pointer}
+.wa{position:fixed;bottom:18px;left:16px;right:16px;background:#25D366;color:#fff;border-radius:16px;padding:16px;text-align:center;font-weight:900;text-decoration:none}
+@media(min-width:600px){.wa{left:auto;width:320px}}
 </style>
 </head>
 <body>
-<div class="header"><b>FOF BOUTIQUE</b><span style="background:#ff3b30;padding:3px 10px;border-radius:12px;font-size:11px">GAGNOA - 37-45</span></div>
-<div class="hero"><h1>18 MODELES DISPO A GAGNOA</h1><p>📍 Livraison partout CI<br><b>📏 TAILLE 37 a 45 DISPONIBLE</b><br>12.000F a 15.000F</p></div>
-<div class="grid">
-
-<div class="card"><div class="imgbox"><span class="badge">TN WHITE</span><img src="image/nike-tn-triple-white.jpg"></div><div class="info"><h3>Nike TN Triple White</h3><p class="sizes">📏 37-38-39-40-41-42-43-44-45</p><div class="price">15.000F</div><button class="btn" onclick="cmd('TN Triple White')">COMMANDER</button></div></div>
-<div class="card"><div class="imgbox"><span class="badge">SAMBA</span><img src="image/samba-blanc-noir.jpg"></div><div class="info"><h3>Adidas Samba Blanc/Noir</h3><p class="sizes">📏 37-38-39-40-41-42-43-44-45</p><div class="price">13.000F</div><button class="btn" onclick="cmd('Samba Blanc/Noir')">COMMANDER</button></div></div>
-<div class="card"><div class="imgbox"><span class="badge">KAYANO BLEU</span><img src="image/asics-kayano-bleu.jpg"></div><div class="info"><h3>Asics Gel-Kayano 14 Bleu Ciel</h3><p class="sizes">📏 37-38-39-40-41-42-43-44-45</p><div class="price">15.000F</div><button class="btn" onclick="cmd('Kayano Bleu')">COMMANDER</button></div></div>
-<div class="card"><div class="imgbox"><span class="badge">OGYI</span><img src="image/ogyi-noir.jpg"></div><div class="info"><h3>OGYI Noir</h3><p class="sizes">📏 37-38-39-40-41-42-43-44-45</p><div class="price">15.000F</div><button class="btn" onclick="cmd('OGYI Noir')">COMMANDER</button></div></div>
-
-<div class="card"><div class="imgbox"><span class="badge">NB 530</span><img src="image/nb530-blanche-gris.jpg"></div><div class="info"><h3>New Balance 530 Blanche/Gris</h3><p class="sizes">📏 37-38-39-40-41-42-43-44-45</p><div class="price">15.000F</div><button class="btn" onclick="cmd('NB 530')">COMMANDER</button></div></div>
-<div class="card"><div class="imgbox"><span class="badge">CAMPUS</span><img src="image/campus-black-white.jpg"></div><div class="info"><h3>Adidas Campus Noir/Blanc</h3><p class="sizes">📏 37-38-39-40-41-42-43-44-45</p><div class="price">13.000F</div><button class="btn" onclick="cmd('Campus Noir Blanc')">COMMANDER</button></div></div>
-<div class="card"><div class="imgbox"><span class="badge">CAMPUS</span><img src="image/campus-black-pink.jpg"></div><div class="info"><h3>Adidas Campus Noir/Rose</h3><p class="sizes">📏 37-38-39-40-41-42-43-44-45</p><div class="price">13.000F</div><button class="btn" onclick="cmd('Campus Noir Rose')">COMMANDER</button></div></div>
-<div class="card"><div class="imgbox"><span class="badge">CAMPUS</span><img src="image/campus-brown.jpg"></div><div class="info"><h3>Adidas Campus Marron</h3><p class="sizes">📏 37-38-39-40-41-42-43-44-45</p><div class="price">13.000F</div><button class="btn" onclick="cmd('Campus Marron')">COMMANDER</button></div></div>
-<div class="card"><div class="imgbox"><span class="badge">TN</span><img src="image/nike-tn-blanche-noir.jpg"></div><div class="info"><h3>Nike TN Blanche/Noir</h3><p class="sizes">📏 37-38-39-40-41-42-43-44-45</p><div class="price">15.000F</div><button class="btn" onclick="cmd('
+<header><h1>FOF BOUTIQUE 👟</h1><div>📍 Gagnoa - Commerce | 37 à 45 | Livraison Abidjan & Gagnoa</div></header>
+<div class="banner">🔥 12.000F à 15.000F - Paye à la livraison - WhatsApp: 05 66 40 75 88</div>
+<div id="grid" class="grid"></div>
+<a class="wa" href="https://wa.me/2250566407588">💬 Commander sur WhatsApp - 05 66 40 75 88</a>
+<script>
+const API="https://api.github.com/repos/DIOA1009060001/Diomande-ida-2026/contents/image";
+const RAW="https://raw.githubusercontent.com/DIOA1009060001/Diomande-ida-2026/main/image/";
+const PRODUCTS=[["New Balance 530 - Blanche/Gris","15.000F"],["Adidas Campus Noir/Blanc / Rose / Marron","13.000F"],["Nike TN - Blanche/Noir","15.000F"],["Jordan 4 Blanc/Noir","13.000F"],["Vans Noir/Blanc","13.000F"],["NB 9060 Triple Black - Noir/Beige","15.000F"],["Nike Shox TL Triple Black - Noir","15.000F"],["Air Force 1 Black Python - Python Noir","15.000F"],["Puma Suede XL - Noir / Rouge / Bleu","15.000F"],["Nike Air Max - Blanc / Noir","15.000F"],["Adidas Runfalcon - Noir/Blanc","12.000F"],["Asics Gel-Kayano - Blanc/Noir","15.000F"],["TN Full White","15.000F"],["OGYI - Noir/Bleu","15.000F"],["Samba - Noir/Blanc","15.000F"]];
+const grid=document.getElementById('grid');
+async function load(){
+ const r=await fetch(API); const files=await r.json();
+ const imgs=files.filter(f=>f.name.match(/\.(jpg|jpeg|png|webp)$/i)).sort((a,b)=>a.name.localeCompare(b.name));
+ grid.innerHTML="";
+ imgs.forEach((file,i)=>{
+  const p=PRODUCTS[i%PRODUCTS.length];
+  grid.innerHTML+=`<div class="card"><img src="${RAW+file.name}" loading="lazy"><div class="info"><div class="name">${p[0]}</div><div class="price">${p[1]}</div><div class="sizes">37 38 39 40 41 42 43 44 45</div></div><button class="btn" onclick="window.open('https://wa.me/2250566407588?text=Salut FOF Boutique je veux commander ${encodeURIComponent(p[0])} ${p[1]}')">Commander - ${p[1]}</button></div>`;
+ });
+}
+load();
+function order(n,p){window.open(`https://wa.me/2250566407588?text=Je veux ${n} ${p}`)}
+</script>
+</body>
+</html>
