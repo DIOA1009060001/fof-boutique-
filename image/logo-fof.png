@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FOF Boutique Gagnoa | Logo officiel</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:system-ui;background:#f6f6f6;color:#111}
+header{background:#0f0f0f;color:#fff;padding:14px;text-align:center;position:sticky;top:0;z-index:20;display:flex;flex-direction:column;align-items:center;gap:8px}
+header img{width:140px;background:#fff;border-radius:12px;padding:8px}
+.bandeau-top{background:#ff3b30;color:#fff;text-align:center;padding:8px;font-weight:900;font-size:13px;animation:clignote 1s infinite}
+@keyframes clignote{0%,100%{opacity:1}50%{opacity:.7}}
+.banner{background:#ffe600;text-align:center;padding:10px;font-weight:800;font-size:13px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;padding:12px;max-width:1200px;margin:auto}
+@media(min-width:800px){.grid{grid-template-columns:repeat(4,1fr)}}
+.card{background:#fff;border-radius:18px;overflow:hidden;box-shadow:0 6px 18px rgba(0,0,0,.08)}
+.card img{width:100%;height:220px;object-fit:cover}
+.info{padding:10px 12px 0}.name{font-weight:800;font-size:13px;min-height:36px}.price{color:#e11d48;font-weight:900;font-size:15px}
+.sizes{font-size:10px;background:#f3f3f3;padding:4px 8px;border-radius:20px;display:inline-block;margin-top:4px}
+.btn{margin:10px;background:#111;color:#fff;border:none;border-radius:12px;padding:11px;width:calc(100% - 20px);font-weight:800}
+.wa{position:fixed;bottom:14px;left:12px;right:12px;background:#25D366;color:#fff;border-radius:16px;padding:15px;text-align:center;font-weight:900;text-decoration:none;z-index:30}
+@media(min-width:600px){.wa{left:auto;width:340px;right:20px}}
+</style>
+</head>
+<body>
+<header>
+<img src="./image/logo-fof.png" alt="FOF Boutique Logo" onerror="this.style.display='none'">
+<div><b>FOF BOUTIQUE</b> - Gagnoa Commerce | 37 à 45 | 05 66 40 75 88</div>
+</header>
+<div class="bandeau-top">🚚 LIVRAISON GRATUITE À GAGNOA AUJOURD'HUI - COMMANDE AVANT 17H - STOCK LIMITÉ !</div>
+<div class="banner">🔥 12.000F à 15.000F - Paye à la livraison - WhatsApp 05 66 40 75 88</div>
+<div class="grid">
+<div class="card"><img src="./image/IMG_7207.jpeg"><div class="info"><div class="name">New Balance 530 - Blanche/Gris</div><div class="price">15.000F</div><div class="sizes">37-45</div></div><button class="btn" onclick="window.open('https://wa.me/2250566407588?text=New Balance 530')">Commander</button></div>
+<div class="card"><img src="./image/IMG_7208.jpeg"><div class="info"><div class="name">Adidas Campus Noir/Blanc/Rose/Marron</div><div class="price">13.000F</div><div class="sizes">37-45</div></div><button class="btn" onclick="window.open('https://wa.me/2250566407588?text=Adidas Campus')">Commander</button></div>
+<div class="card"><img src="./image/IMG_7210.jpeg"><div class="info"><div class="name">Nike TN - Blanche/Noir</div><div class="price">15.000F</div><div class="sizes">37-45</div></div><button class="btn" onclick="window.open('https://wa.me/2250566407588?text=Nike TN')">Commander</button></div>
+<div class="card"><img src="./image/IMG_7212.jpeg"><div class="info"><div class="name">Jordan 4 Blanc/Noir</div><div class="price">13.000F</div><div class="sizes">37-45</div></div><button class="btn" onclick="window.open('https://wa.me/2250566407588?text=Jordan 4')">Commander</button></div>
+<div class="card"><img src="./image/PHOTO-2026-10-31-00-45-18.jpg"><div class="info"><div class="name">Vans Noir/Blanc</div><div class="price">13.000F</div><div class="sizes">37-45</div></div><button class="btn" onclick="window.open('https://wa.me/2250566407588?text=Vans')">Commander</button></div>
+<div class="card"><img src="./image/PHOTO-2026-10-31-00-45-18%202.jpg"><div class="info"><div class="name">NB 9060 Triple Black</div><div class="price">15.000F</div><div class="sizes">37-45</div></div><button class="btn" onclick="window.open('https://wa.me/2250566407588?text=NB 9060')">Commander</button></div>
+<div class="card"><img src="./image/PHOTO-2026-10-31-00-45-18%203.jpg"><div class="info"><div class="name">Nike Shox TL Triple Black</div><div class="price">15.000F</div><div class="sizes">37-45</div></div><button class="btn" onclick="window.open('https://wa.me/2250566407588?text=Nike Shox')">Commander</button></div>
+<div class="card"><img src="./image/PHOTO-2026-10-31-00-45-18%204.jpg"><div class="info"><div class="name">Air Force 1 Black Python</div><div class="price">15.000F</div><div class="sizes">37-45</div></div><button class="btn" onclick="window.open('https://wa.me/2250566407588?text=Air Force 1 Python')">Commander</button></div>
+<div class="card"><img src="./image/PHOTO-2026-10-31-00-45-18%205.jpg"><div class="info"><div class="name">Puma Suede XL</div><div class="price">15.000F</div><div class="sizes">37-45</div></div><button class="btn" onclick="window.open('https://wa.me/2250566407588?text=Puma Suede')">Commander</button></div>
+<div class="card"><img src="./image/PHOTO-2026-10-31-00-46-50.jpg"><div class="info"><div class="name">Nike Air Max</div><div class="price">15.000F</div><div class="sizes">37-45</div></div><button class="btn" onclick="window.open('https://wa.me/2250566407588?text=Air Max')">Commander</button></div>
+<div class="card"><img src="./image/PHOTO-2026-10-31-00-46-50%202.jpg"><div class="info"><div class="name">Adidas Runfalcon</div><div class="price">12.000F</div><div class="sizes">37-45</div></div><button class="btn" onclick="window.open('https://wa.me/2250566407588?text=Runfalcon')">Commander</button></div>
+<div class="card"><img src="./image/PHOTO-2026-10-31-00-46-50%203.jpg"><div class="info"><div class="name">Asics Gel-Kayano</div><div class="price">15.000F</div><div class="sizes">37-45</div></div><button class="btn" onclick="window.open('https://wa.me/2250566407588?text=Asics')">Commander</button></div>
+<div class="card"><img src="./image/PHOTO-2026-10-31-00-46-50%204.jpg"><div class="info"><div class="name">TN Full White</div><div class="price">15.000F</div><div class="sizes">37-45</div></div><button class="btn" onclick="window.open('https://wa.me/2250566407588?text=TN White')">Commander</button></div>
+<div class="card"><img src="./image/PHOTO-2026-10-31-00-47-46%202.jpg"><div class="info"><div class="name">OGYI - Noir/Bleu</div><div class="price">15.000F</div><div class="sizes">37-45</div></div><button class="btn" onclick="window.open('https://wa.me/2250566407588?text=OGYI')">Commander</button></div>
+<div class="card"><img src="./image/PHOTO-2026-10-31-00-47-46%203.jpg"><div class="info"><div class="name">Samba - Noir/Blanc</div><div class="price">15.000F</div><div class="sizes">37-45</div></div><button class="btn" onclick="window.open('https://wa.me/2250566407588?text=Samba')">Commander</button></div>
+<div class="card"><img src="./image/PHOTO-2026-10-31-00-47-46.jpg"><div class="info"><div class="name">Samba - Vue 2</div><div class="price">15.000F</div><div class="sizes">37-45</div></div><button class="btn" onclick="window.open('https://wa.me/2250566407588?text=Samba')">Commander</button></div>
+<div class="card"><img src="./image/PHOTO-2026-10-31-00-49-30.jpg"><div class="info"><div class="name">New Balance 530 - Autre</div><div class="price">15.000F</div><div class="sizes">37-45</div></div><button class="btn" onclick="window.open('https://wa.me/2250566407588?text=NB 530')">Commander</button></div>
+<div class="card"><img src="./image/PHOTO-2026-10-31-00-49-30%202.jpg"><div class="info"><div class="name">Adidas Campus - Autre</div><div class="price">13.000F</div><div class="sizes">37-45</div></div><button class="btn" onclick="window.open('https://wa.me/2250566407588?text=Campus')">Commander</button></div>
+<div class="card"><img src="./image/PHOTO-2026-10-31-00-51-38.jpg"><div class="info"><div class="name">Nike Air Max - Pack</div><div class="price">15.000F</div><div class="sizes">37-45</div></div><button class="btn" onclick="window.open('https://wa.me/2250566407588?text=Air Max Pack')">Commander</button></div>
+<div class="card"><img src="./image/PHOTO-2026-10-31-00-51-38%202.jpg"><div class="info"><div class="name">Puma / Asics Mix</div><div class="price">15.000F</div><div class="sizes">37-45</div></div><button class="btn" onclick="window.open('https://wa.me/2250566407588?text=Mix')">Commander</button></div>
+</div>
+<a class="wa" href="https://wa.me/2250566407588">💬 Commander sur WhatsApp - 05 66 40 75 88</a>
+</body>
+</html>
