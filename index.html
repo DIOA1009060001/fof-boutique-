@@ -1,40 +1,51 @@
 <!DOCTYPE html>
-<html lang="fr"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>FOF Boutique Gagnoa</title><style>
-*{margin:0;padding:0;box-sizing:border-box}body{font-family:system-ui;background:#f5f5f5}
-header{background:#0f0f0f;color:#fff;padding:14px;text-align:center;position:sticky;top:0;z-index:20}
-.logo{background:#fff;color:#000;font-weight:900;padding:10px 22px;border-radius:14px;display:inline-block}
-.rouge{background:#ff1a1a;color:#fff;text-align:center;padding:10px;font-weight:900;font-size:13px}
-.jaune{background:#ffe600;text-align:center;padding:10px;font-weight:900}
-.grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;padding:12px;max-width:1200px;margin:0 auto 80px}
-.card{background:#fff;border-radius:18px;overflow:hidden;box-shadow:0 6px 18px rgba(0,0,0,.08)}
-.card img{width:100%;height:230px;object-fit:cover;background:#fff}
-.info{padding:10px}.name{font-weight:800;font-size:12px;min-height:34px}.price{color:#e11d48;font-weight:900;margin-top:4px}
-.sizes{font-size:10px;background:#111;color:#fff;padding:4px 10px;border-radius:20px;display:inline-block;margin-top:5px}
-.btn{margin:10px;background:#111;color:#fff;border:none;border-radius:12px;padding:12px;width:calc(100% - 20px);font-weight:900;cursor:pointer}
-.wa{position:fixed;bottom:12px;left:12px;right:12px;background:#25D366;color:#fff;border-radius:16px;padding:16px;text-align:center;font-weight:900;text-decoration:none;z-index:30}
-</style></head><body>
-<header><div class="logo">FOF</div><div style="margin-top:6px"><b>FOF BOUTIQUE GAGNOA</b> | 05 66 40 75 88</div></header>
-<div class="rouge">🚚 LIVRAISON GRATUITE À GAGNOA - STOCK 37 à 45 !</div>
-<div class="jaune">🔥 12.000F à 15.000F - Paye à la livraison</div>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FOF BOUTIQUE GAGNOA | 05 66 40 75 88</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:system-ui;background:#f5f5f5}
+.header{background:#000;color:#fff;text-align:center;padding:15px}
+.logo{background:#fff;color:#000;display:inline-block;padding:8px 25px;border-radius:30px;font-weight:900;font-size:22px}
+.banner-red{background:#e60000;color:#fff;text-align:center;padding:8px;font-weight:700;font-size:14px}
+.banner-yellow{background:#ffcc00;color:#000;text-align:center;padding:8px;font-weight:900;font-size:16px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;padding:12px}
+.card{background:#fff;border-radius:15px;overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,.1)}
+.card img{width:100%;height:180px;object-fit:cover;background:#fff}
+.info{padding:10px}
+.name{font-weight:700;font-size:13px;height:32px}
+.price{color:#e60023;font-weight:900;font-size:18px;margin:5px 0}
+.size{background:#000;color:#fff;display:inline-block;padding:3px 10px;border-radius:20px;font-size:12px}
+.btn{background:#000;color:#fff;width:100%;padding:10px;border:none;border-radius:25px;font-weight:700;margin-top:8px}
+.whatsapp{position:fixed;bottom:15px;left:10px;right:10px;background:#25D366;color:#fff;text-align:center;padding:14px;border-radius:30px;font-weight:900;text-decoration:none}
+</style>
+</head>
+<body>
+<div class="header"><div class="logo">FOF</div><div style="margin-top:8px;font-weight:700">FOF BOUTIQUE GAGNOA | 05 66 40 75 88</div></div>
+<div class="banner-red">🚚 LIVRAISON GRATUITE À GAGNOA - STOCK 37 à 45 !</div>
+<div class="banner-yellow">🔥 12.000F à 15.000F - Paye à la livraison</div>
 
 <div class="grid">
-<div class="card"><img src="./image/tn-blanche-noir.jpg"><div class="info"><div class="name">Nike TN - Blanche/Noir</div><div class="price">15.000F</div><div class="sizes">37-45</div></div><button class="btn" onclick="window.open('https://wa.me/2250566407588?text=TN%20Blanche%20Noir%2015.000F')">Commander</button></div>
-<div class="card"><img src="./image/campus-marron.jpg"><div class="info"><div class="name">Adidas Campus - Marron</div><div class="price">13.000F</div><div class="sizes">37-45</div></div><button class="btn" onclick="window.open('https://wa.me/2250566407588?text=Campus%20Marron%2013.000F')">Commander</button></div>
-<div class="card"><img src="./image/shox-noir.jpg"><div class="info"><div class="name">Nike Shox TL Triple Black</div><div class="price">15.000F</div><div class="sizes">37-45</div></div><button class="btn" onclick="window.open('https://wa.me/2250566407588?text=Shox%20Noir%2015.000F')">Commander</button></div>
-<div class="card"><img src="./image/af1-python.jpg"><div class="info"><div class="name">Air Force 1 Black Python</div><div class="price">15.000F</div><div class="sizes">37-45</div></div><button class="btn" onclick="window.open('https://wa.me/2250566407588?text=AF1%20Python%2015.000F')">Commander</button></div>
-<div class="card"><img src="./image/vans.jpg"><div class="info"><div class="name">Vans Old Skool - Noir/Blanc</div><div class="price">13.000F</div><div class="sizes">37-45</div></div><button class="btn" onclick="window.open('https://wa.me/2250566407588?text=Vans%2013.000F')">Commander</button></div>
-<div class="card"><img src="./image/jordan-4.jpg"><div class="info"><div class="name">Jordan 4 - Blanc/Noir</div><div class="price">13.000F</div><div class="sizes">37-45</div></div><button class="btn" onclick="window.open('https://wa.me/2250566407588?text=Jordan%204%2013.000F')">Commander</button></div>
-<div class="card"><img src="./image/nb-530.jpg"><div class="info"><div class="name">New Balance 530 - Blanche/Vert</div><div class="price">15.000F</div><div class="sizes">37-45</div></div><button class="btn" onclick="window.open('https://wa.me/2250566407588?text=NB530%2015.000F')">Commander</button></div>
-<div class="card"><img src="./image/campus-noir-rose.jpg"><div class="info"><div class="name">Adidas Campus - Noir/Rose</div><div class="price">13.000F</div><div class="sizes">37-45</div></div><button class="btn" onclick="window.open('https://wa.me/2250566407588?text=Campus%20Noir%20Rose')">Commander</button></div>
-<div class="card"><img src="./image/air-max.jpg"><div class="info"><div class="name">Nike Air Max</div><div class="price">15.000F</div><div class="sizes">37-45</div></div><button class="btn" onclick="window.open('https://wa.me/2250566407588?text=Air%20Max')">Commander</button></div>
-<div class="card"><img src="./image/tn-full-white.jpg"><div class="info"><div class="name">Nike TN Full White</div><div class="price">15.000F</div><div class="sizes">37-45</div></div><button class="btn" onclick="window.open('https://wa.me/2250566407588?text=TN%20White')">Commander</button></div>
-<div class="card"><img src="./image/ogyi.jpg"><div class="info"><div class="name">OGYI - Noir/Bleu</div><div class="price">15.000F</div><div class="sizes">37-45</div></div><button class="btn" onclick="window.open('https://wa.me/2250566407588?text=OGYI')">Commander</button></div>
-<div class="card"><img src="./image/samba.jpg"><div class="info"><div class="name">Adidas Samba</div><div class="price">15.000F</div><div class="sizes">37-45</div></div><button class="btn" onclick="window.open('https://wa.me/2250566407588?text=Samba')">Commander</button></div>
-<div class="card"><img src="./image/puma-suede.jpg"><div class="info"><div class="name">Puma Suede XL - Noir</div><div class="price">15.000F</div><div class="sizes">37-45</div></div><button class="btn" onclick="window.open('https://wa.me/2250566407588?text=Puma%20Suede')">Commander</button></div>
-<div class="card"><img src="./image/asics.jpg"><div class="info"><div class="name">Asics Gel-Kayano - Blanc</div><div class="price">15.000F</div><div class="sizes">37-45</div></div><button class="btn" onclick="window.open('https://wa.me/2250566407588?text=Asics')">Commander</button></div>
-<div class="card"><img src="./image/runfalcon.jpg"><div class="info"><div class="name">Adidas Runfalcon - Noir/Blanc</div><div class="price">12.000F</div><div class="sizes">37-45</div></div><button class="btn" onclick="window.open('https://wa.me/2250566407588?text=Runfalcon%2012.000F')">Commander</button></div>
+<div class="card"><img src="./image/tn-blanche-noir.jpg"><div class="info"><div class="name">Nike TN - Blanche/Noir</div><div class="price">15.000F</div><div class="size">37-45</div><button class="btn" onclick="location.href='https://wa.me/2250566407588?text=Je veux Nike TN Blanche/Noir'">Commander</button></div></div>
+<div class="card"><img src="./image/campus-marron.jpg"><div class="info"><div class="name">Adidas Campus - Marron</div><div class="price">13.000F</div><div class="size">37-45</div><button class="btn" onclick="location.href='https://wa.me/2250566407588?text=Je veux Campus Marron'">Commander</button></div></div>
+<div class="card"><img src="./image/af1-python.jpg"><div class="info"><div class="name">Nike AF1 - Python</div><div class="price">14.000F</div><div class="size">37-45</div><button class="btn" onclick="location.href='https://wa.me/2250566407588?text=Je veux AF1 Python'">Commander</button></div></div>
+<div class="card"><img src="./image/air-max.jpg"><div class="info"><div class="name">Nike Air Max</div><div class="price">15.000F</div><div class="size">37-45</div><button class="btn" onclick="location.href='https://wa.me/2250566407588?text=Je veux Air Max'">Commander</button></div></div>
+<div class="card"><img src="./image/asics.jpg"><div class="info"><div class="name">Asics</div><div class="price">12.000F</div><div class="size">37-45</div><button class="btn" onclick="location.href='https://wa.me/2250566407588?text=Je veux Asics'">Commander</button></div></div>
+<div class="card"><img src="./image/campus-noir-rose.jpg"><div class="info"><div class="name">Campus Noir/Rose</div><div class="price">13.000F</div><div class="size">37-45</div><button class="btn" onclick="location.href='https://wa.me/2250566407588?text=Je veux Campus Noir Rose'">Commander</button></div></div>
+<div class="card"><img src="./image/jordan-4.jpg"><div class="info"><div class="name">Jordan 4</div><div class="price">15.000F</div><div class="size">37-45</div><button class="btn" onclick="location.href='https://wa.me/2250566407588?text=Je veux Jordan 4'">Commander</button></div></div>
+<div class="card"><img src="./image/nb-530.jpg"><div class="info"><div class="name">New Balance 530</div><div class="price">13.000F</div><div class="size">37-45</div><button class="btn" onclick="location.href='https://wa.me/2250566407588?text=Je veux NB 530'">Commander</button></div></div>
+<div class="card"><img src="./image/ogyi.jpg"><div class="info"><div class="name">OGYI</div><div class="price">12.000F</div><div class="size">37-45</div><button class="btn" onclick="location.href='https://wa.me/2250566407588?text=Je veux OGYI'">Commander</button></div></div>
+<div class="card"><img src="./image/puma-suede.jpg"><div class="info"><div class="name">Puma Suede</div><div class="price">12.000F</div><div class="size">37-45</div><button class="btn" onclick="location.href='https://wa.me/2250566407588?text=Je veux Puma Suede'">Commander</button></div></div>
+<div class="card"><img src="./image/runfalcon.jpg"><div class="info"><div class="name">Adidas Runfalcon</div><div class="price">13.000F</div><div class="size">37-45</div><button class="btn" onclick="location.href='https://wa.me/2250566407588?text=Je veux Runfalcon'">Commander</button></div></div>
+<div class="card"><img src="./image/samba.jpg"><div class="info"><div class="name">Adidas Samba</div><div class="price">13.000F</div><div class="size">37-45</div><button class="btn" onclick="location.href='https://wa.me/2250566407588?text=Je veux Samba'">Commander</button></div></div>
+<div class="card"><img src="./image/shox-noir.jpg"><div class="info"><div class="name">Nike Shox - Noir</div><div class="price">14.000F</div><div class="size">37-45</div><button class="btn" onclick="location.href='https://wa.me/2250566407588?text=Je veux Shox Noir'">Commander</button></div></div>
+<div class="card"><img src="./image/tn-full-white.jpg"><div class="info"><div class="name">Nike TN - Full White</div><div class="price">15.000F</div><div class="size">37-45</div><button class="btn" onclick="location.href='https://wa.me/2250566407588?text=Je veux TN Full White'">Commander</button></div></div>
+<div class="card"><img src="./image/vans.jpg"><div class="info"><div class="name">Vans</div><div class="price">12.000F</div><div class="size">37-45</div><button class="btn" onclick="location.href='https://wa.me/2250566407588?text=Je veux Vans'">Commander</button></div></div>
 </div>
 
-<a class="wa" href="https://wa.me/2250566407588">💬 Commander WhatsApp - 05 66 40 75 88</a>
-</body></html>
+<a class="whatsapp" href="https://wa.me/2250566407588">💬 Commander WhatsApp - 05 66 40 75 88</a>
+<br><br><br><br>
+</body>
+</html>
